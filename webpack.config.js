@@ -16,6 +16,11 @@ export default {
             template: './src/index.html',
         }),
     ],
+    devServer: {
+        static: './dist',
+        compress: false,
+        port: 9000,
+    },
     module: {
         rules: [
             {
